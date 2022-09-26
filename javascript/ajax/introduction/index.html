@@ -10,5 +10,12 @@
     <h1>Primo esempio con XMLHttpRequest</h1>
 
     <script src="xmlHttpRequest.js"></script>
+    <script>
+        createXMLHttpRequest('GET', "dati.json", mostrarUsuarios)
+
+        function mostrarUsuarios(data){
+            console.log(data)
+        }
+    </script>
 </body>
 </html>
